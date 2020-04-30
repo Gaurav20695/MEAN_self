@@ -1,0 +1,16 @@
+<mat-card>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <mat-form-field>
+            <mat-label>Message Subject</mat-label>
+            <input matInput name="subject" ngModel #subject="ngModel" placeholder="Ex. Pizza" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Message Content</mat-label>
+            <textarea matInput name="content" ngModel #content="ngModel" placeholder="Ex. It makes me feel..."
+                required></textarea>
+        </mat-form-field>
+
+        <button mat-raised-button color="accent">Post</button>
+    </form>
+</mat-card>
