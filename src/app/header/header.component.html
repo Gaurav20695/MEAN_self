@@ -1,3 +1,9 @@
 <mat-toolbar color="primary">
-    Messages
+    <div class=""><button mat-button routerLink="/createmessages"> Messanger</button></div>
+    <div class="left"><button mat-button routerLink="/postmessages">Inbox</button></div>
+    <div class="right"><button (click)="onClick()" mat-button> {{ click ? 'Signup' : 'Login'}}
+        </button>
+    </div>
 </mat-toolbar>
+
+<router-outlet></router-outlet>

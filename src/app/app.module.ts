@@ -7,17 +7,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostCreateComponent } from './Posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCardModule, MatExpansionModule, MatInputModule, MatButtonModule } from '@angular/material';
+import { MatCardModule, MatExpansionModule, MatInputModule, MatButtonModule, MatProgressSpinnerModule, MatIconModule } from '@angular/material';
 import { PostListComponent } from './Posts/post-list/post-list.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PostCreateComponent,
-    PostListComponent
+    PostListComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,12 @@ import { PostListComponent } from './Posts/post-list/post-list.component';
     MatInputModule,
     MatButtonModule,
     MatExpansionModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatProgressSpinnerModule,
+    MatIconModule,
+    RouterModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,15 @@
+.left{
+  
+    margin-left : 25rem;
+    padding : 0px  
+}
+
+.right{
+   
+    margin-left : auto;
+    padding : 0px
+}
+
+button{
+ font-size: 20px;   
+}
